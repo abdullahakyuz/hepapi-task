@@ -6,13 +6,13 @@ Bu uygulama Python Flask uygulamasıdır. Uygulamanın verilerinin saklanması i
 
 İlk olarak bilgisayarınızda uygulamayı çalıştırmak için ihtiyacınız olan uygulamaları kurun.
 
-[Vs Code indir](https://code.visualstudio.com/)
-[Docker Desktop İndir](https://www.docker.com/products/docker-desktop/)
-[Minikube İndir](https://minikube.sigs.k8s.io/docs/)
-[Java İndir](https://www.oracle.com/tr/java/technologies/downloads/#java17) (Uygulama JRE 17'de sorunsuz çalışmakta)
-[Jenkins İndir](https://www.jenkins.io/)
-[Python İndir](https://www.python.org/downloads/) (Kurulum sırasında Add PATH işaretlemeyi unutmayın)
-[MongoDB İndir](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)
+# [Vs Code indir](https://code.visualstudio.com/)
+# [Docker Desktop İndir](https://www.docker.com/products/docker-desktop/)
+# [Minikube İndir](https://minikube.sigs.k8s.io/docs/)
+# [Java İndir](https://www.oracle.com/tr/java/technologies/downloads/#java17) (Uygulama JRE 17'de sorunsuz çalışmakta)
+# [Jenkins İndir](https://www.jenkins.io/)
+# [Python İndir](https://www.python.org/downloads/) (Kurulum sırasında Add PATH işaretlemeyi unutmayın)
+# [MongoDB İndir](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)
 
 
 Python Sanal Ortam Kurulumu
