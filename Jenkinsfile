@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        KUBECONFIG = "C:\\Users\\abdul\\.kube\\config"
+    }
+
     stages {
         stage('Deploy') {
             steps {
@@ -17,6 +21,10 @@ pipeline {
                             Write-Host "kubectl not found. Please install kubectl first."
                             exit 1
                         }
+
+                        # Minikube'u başlat
+                        Write-Host "Starting Minikube..."
+                        minikube start
 
                         # YAML dosyalarını uygulama
                         Write-Host "Applying Kubernetes manifests..."
