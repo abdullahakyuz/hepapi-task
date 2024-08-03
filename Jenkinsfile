@@ -62,7 +62,7 @@ pipeline {
             steps {
                 script {
                     // 1 dakika bekleme
-                    Write-Host "Waiting for 1 minute before cleanup..."
+                    echo "Waiting for 1 minute before cleanup..."
                     sleep(time: 1, unit: 'MINUTES')
                 }
             }
