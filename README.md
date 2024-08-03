@@ -95,6 +95,12 @@ Jenkins'de Kubernetes yetkilendirme işlemlerini yapmalısınız. Jenkins ile Mi
 
 Bir pipeline oluşturun ve Jenkinsfile'da yazan metnin tamamını kopyalayın. Bunun yerine Jenkinsfile'ı da kullanabilirsiniz. Ancak Github credential olduğundan yada Github reponuzun public olduğundan emin olun. Böylelikle Pipeline script'i yerine Jenkinsfile ile de pipeline hazırlayabilirsiniz.
 
+`##Jenkinsfile'da 5. satırda bulunan KUBECONFIG değerinini kendi bilgisayarınızda bulunan kullanıcı adına göre değiştirin aksi halde Jenkinsfile Kubernetes config dosyasını bulamadığı için çalışmayacaktır.`
+
+
+
+
+
 `##Jenkins freestyle project ile uygulamayı çalıştırma.`
 
 Komut satırında Github SCM ile erişebildiğiniz `cleanup.ps1` dosyasınız çalıştırdığınızda uygulama çalışacaktır. `cleanup1.ps1` dosyasını çalıştırdığınızda ise uygulama sonlandırılacaktır.
