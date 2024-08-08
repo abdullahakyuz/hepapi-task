@@ -77,6 +77,16 @@ minikube ip
 
 Alacağınız ip adresini kopyalayın ve `30002` ekleyin. `192.168.1.1:30002` gibi.
 
+Kubernetes manifest dosyalarınızın içeriği:
+
+`flask-depoloy.yaml` dosyası ile birlikte uygulamanız 1 pod ile ayağa kalkacak ve belirlediğimiz imajı dockerhub'dan kuracaktır. Servis objesi uygulamanın NodePort tipi servisle 30002 portundan yayın yapmasını sağlayacaktır. Uygulamanın MongoDB'ye bağlanması için gerekli olan çevresel değişkenler ayrı bir secret file'a yazılmamış uygulama içine açık şekilde yazılmıştır.
+
+`mongodb-deploy.yaml` dosyası mongobdb'yi 4.4 imajından kurulumunu sağlayacaktır. Mongodb 27017 portundan yayın yapmaktadır. Servis tipini ClusterIP yaparak veritabanına dış dünyadan erişimi kısıtlayıp sadece cluster içinde bulunan uygulamaların erişimini aktif hale getirmiş bulunmaktayız.
+
+`mongodb-pv.yaml` mongodb'nin veritabanında biriktirdiği saklamak için oluşturulmuştur.
+
+`mongodb-pvc.yaml` oluşturulan 5 GB'lık volume'den 5 GB'lık kısmın tamamının MongoDB uygulamasına bağlanmasını sağlama talebidir. PVC objesinin öncelikli olarak PV objesine ve ardından MongoDB'ye bağlanması sağlanmış böylelikle uygulamamız dursa dahi verilerimiz MongoDB içerisinde oluşturulan /data/mongodb yolunda saklanacaktır.
+
 Uygulamanız çalışıyor tebrikler !
 
 ### Uygulamayı Jenkins ile çalıştırma
